@@ -89,7 +89,7 @@
               "uid": "000000003"
             },
             "editorMode": "builder",
-            "expr": "e2proxy_filesystem_coverage",
+            "expr": " sum(e2proxy_filesystem_coverage{namespace=~\"$namespace\", cluster=~\"$cluster\", job=~\"kube-state-metrics\",phase=\"Failed\"})",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
@@ -178,7 +178,7 @@
               "uid": "000000003"
             },
             "editorMode": "builder",
-            "expr": "e2proxy_email_info",
+            "expr": "sum(e2proxy_email_info{namespace=~\"$namespace\", cluster=~\"$cluster\", job=~\"kube-state-metrics\",phase=\"Failed\"})",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
@@ -276,7 +276,7 @@
               "uid": "000000003"
             },
             "editorMode": "builder",
-            "expr": "e2proxy_filesystem_free",
+            "expr": " sum(e2proxy_filesystem_free{namespace=~\"$namespace\", cluster=~\"$cluster\", job=~\"kube-state-metrics\",phase=\"Failed\"})",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
@@ -374,7 +374,7 @@
               "uid": "000000003"
             },
             "editorMode": "builder",
-            "expr": "process_virtual_memory_bytes",
+            "expr": " sum(process_virtual_memory_bytes{namespace=~\"$namespace\", cluster=~\"$cluster\", job=~\"kube-state-metrics\",phase=\"Failed\"})",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
@@ -471,7 +471,7 @@
               "uid": "000000003"
             },
             "editorMode": "builder",
-            "expr": "process_resident_memory_bytes ",
+            "expr": " sum(process_resident_memory_bytes{namespace=~\"$namespace\", cluster=~\"$cluster\", job=~\"kube-state-metrics\",phase=\"Failed\"})",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
@@ -567,7 +567,7 @@
               "uid": "000000003"
             },
             "editorMode": "builder",
-            "expr": "e2proxy_filesystem_total",
+            "expr": " sum(e2proxy_filesystem_total{namespace=~\"$namespace\", cluster=~\"$cluster\", job=~\"kube-state-metrics\",phase=\"Failed\"})",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
@@ -662,7 +662,7 @@
               "uid": "000000003"
             },
             "editorMode": "builder",
-            "expr": "e2proxy_filesystem_usage",
+            "expr": " sum(e2proxy_filesystem_usage{namespace=~\"$namespace\", cluster=~\"$cluster\", job=~\"kube-state-metrics\",phase=\"Failed\"})",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
@@ -758,7 +758,7 @@
               "uid": "000000003"
             },
             "editorMode": "builder",
-            "expr": "e2proxy_server_info",
+            "expr": " sum(e2proxy_server_info{namespace=~\"$namespace\", cluster=~\"$cluster\", job=~\"kube-state-metrics\",phase=\"Failed\"})",
             "legendFormat": "__auto",
             "range": true,
             "refId": "A"
